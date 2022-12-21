@@ -275,9 +275,9 @@ display: flex;
             align-items: center;
         }
         .boton {
-            display: inline-flex;
+            /* display: inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
         /*     width: 200px;
             height: 65px; */
             /*background: #141414;*/
@@ -346,6 +346,7 @@ display: flex;
             width: 90%;
             max-width: 1200px;
             margin: auto;
+
         /* 	padding: 40px 0; */
         
             /* Flexbox */
@@ -354,11 +355,11 @@ display: flex;
         
             /* Grid */
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
             padding: 20px;
             border-radius: 5px;
-          background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6));
+          /* background: linear-gradient(to left,rgba(255,255,255,0),rgb(7, 6, 6)); */
         
         /*     background-image: linear-gradient(to top, #09203f 10%, #1e6ba5 90%); */
         }
@@ -385,12 +386,12 @@ display: flex;
             transition: 300ms;
             object-fit: cover;
           border-radius: 5%; 
-          box-shadow: 0px -13px 50px;
+          /* box-shadow: 0px -13px 50px; */
         /*     justify-content: center; */
         }
-        img:hover{
+        /* img:hover{
             transform: scale(1.10);
-        }
+        } */
         .descripcion{
             height: 100%;
             display: flex;/*se queda uno al lado del otro*/
@@ -405,9 +406,11 @@ display: flex;
         }
         .descripcion1{
         
-            background-color: rgba(255, 255, 0, 0.726);
+            background-color: rgba(92, 25, 45, 0.233);
+            /* background-color: rgba(255, 8, 0, 0.233); */
             border-radius: 15px;
         /*     background-color: rgba(255, 174, 0, 0.726); */
+
         }
         .foto1{
             /*     background-image: url(../img/fper.jpg); */
@@ -657,9 +660,24 @@ nav{
         #bt-menu:checked ~ .menu{
             margin: 0;
         }
+        .molde{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+flex-wrap: wrap;
+        }
     }
     @media (max-width:480px){
         .portada .perfil{
-            height: 300px;
+            height: 350px;
+            /* height: 300px; */
         }
     }
+    @media (min-width: 768px) and (max-width:1024px){ 
+        .foto1{
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            } 
+    }
+

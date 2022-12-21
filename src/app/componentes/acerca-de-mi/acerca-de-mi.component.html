@@ -1,8 +1,13 @@
 <div class="contenedor">
     <section class="descrip">
         <div class="titulo">
-            <span><h2>AcercaMi</h2></span>
-            <button type="button" class="btn btn-" onclick="cambiar_parrafo()">edit</button>
+            <h2>AcercaMi</h2>
+            <div class="btn-edit">
+                <a class="btn btn-right" href="#"><i class="fa fa-pen"></i></a>
+            </div>
+            <div class="boton">
+                <span><button type="button" id="btn-r" onclick="cambiar_parrafo()">edit</button></span>
+            </div>
         </div>
         <div class>
             <p id="text-AcercaMi">{{acercami.descripcion}}</p>

@@ -5,3 +5,7 @@
 button{
     margin: 0px 0px 10px 20px;
 }
+
+.data-conteiner{
+    display: inline-block;
+}

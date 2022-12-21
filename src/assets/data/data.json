@@ -1,5 +1,92 @@
 {"descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
 "nombre": "Noelia R Olea",
 "cargo": "-Desarrollador Web Full Stack Jr-", 
-"fotoPer": "../../../assets/images/foto.jpg"
+"fotoPer": "../../../assets/images/foto.jpg", 
+"experiencia": [{
+    "empresa": "Ministerio de Tribuanl",
+    "puesto": "Asistente Tecnico",
+    "inicio": "año",
+    "fin": "anofin",
+    "descripcionAct": "verrrrr maquinas y atender gente", 
+    "logo": "../../../assets/images/logo."
+}],
+"educacion": [{
+    "escuela": "Artuto Illia",
+    "titulo": "Bachiller en Administracion y Economia",
+    "inicio": "2011",
+    "fin": "2015",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "Universidad Nacional de Salta",
+    "titulo": "Tecnicatura en Programación/Analista de sistemas",
+    "inicio": "2021",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "Instituto Salteño de Intercambio Cultural Argentina",
+    "titulo": "EAP5",
+    "inicio": "2013",
+    "fin": "2015",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "MINISTERIO ",
+    "titulo": "Java",
+    "inicio": "2021",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "MINISTERIO",
+    "titulo": "SeProgramar",
+    "inicio": "2021",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "codo a codo",
+    "titulo": "EAP5",
+    "inicio": "2022",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "1000 prog",
+    "titulo": "phyton",
+    "inicio": "2022",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+},
+{
+    "escuela": "codo a codo",
+    "titulo": "habilidades blandas",
+    "inicio": "2022",
+    "fin": "-",
+    "logo": "../../../assets/images/logo."
+}],
+"proyectos":[
+{
+    "nombre": "Mi Portfolio",
+    "año": "2022",
+    "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
+    "link": "asdfdsfsdf",
+    "captura": "sadsadas"
+},
+{
+    "nombre": "CRUEW",
+    "año": "2022",
+    "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
+    "link": "asdfdsfsdf",
+    "captura": "sadsadas"
+},
+{
+    "nombre": "Super",
+    "año": "2022",
+    "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
+    "link": "asdfdsfsdf",
+    "captura": "sadsadas"
+}
+]
 }
