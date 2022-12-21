@@ -8,63 +8,63 @@
     "inicio": "año",
     "fin": "anofin",
     "descripcionAct": "verrrrr maquinas y atender gente", 
-    "logo": "../../../assets/images/logo."
+    "logo": "../../../assets/images/urna-logo.jpg"
 }],
 "educacion": [{
-    "escuela": "Artuto Illia",
+    "escuela": "Arturo Illia",
     "titulo": "Bachiller en Administracion y Economia",
     "inicio": "2011",
-    "fin": "2015",
-    "logo": "../../../assets/images/logo."
+    "fin": "-2015",
+    "logo": "../../../assets/images/logoColegio1.jpg"
 },
 {
     "escuela": "Universidad Nacional de Salta",
     "titulo": "Tecnicatura en Programación/Analista de sistemas",
     "inicio": "2021",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/escudoUNSa.jpg"
 },
 {
     "escuela": "Instituto Salteño de Intercambio Cultural Argentina",
     "titulo": "EAP5",
     "inicio": "2013",
-    "fin": "2015",
-    "logo": "../../../assets/images/logo."
+    "fin": "-2015",
+    "logo": "../../../assets/images/ISICANA_LOGO_HOME-1.png"
 },
 {
-    "escuela": "MINISTERIO ",
+    "escuela": "1000P ",
     "titulo": "Java",
     "inicio": "2021",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/1000PJava.png "
 },
 {
     "escuela": "MINISTERIO",
     "titulo": "SeProgramar",
     "inicio": "2021",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/argProg.png"
 },
 {
     "escuela": "codo a codo",
-    "titulo": "EAP5",
+    "titulo": "EAP5000000",
     "inicio": "2022",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/descarga.jpg"
 },
 {
     "escuela": "1000 prog",
     "titulo": "phyton",
     "inicio": "2022",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/1000ProgP2.jpg"
 },
 {
     "escuela": "codo a codo",
     "titulo": "habilidades blandas",
     "inicio": "2022",
-    "fin": "-",
-    "logo": "../../../assets/images/logo."
+    "fin": "",
+    "logo": "../../../assets/images/accenture.jpg"
 }],
 "proyectos":[
 {

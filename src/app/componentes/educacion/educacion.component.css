@@ -3,9 +3,12 @@
     padding: 0px;
 }
 button{
-    margin: 0px 0px 10px 20px;
+    margin: 10px 20px 0px 0px;
 }
 
-.data-conteiner{
+/* .data-conteiner{
     display: inline-block;
+} */
+.data-cont{
+    border-bottom: solid rgb(129 31 52);
 }

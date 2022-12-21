@@ -1,12 +1,13 @@
     <div class="titulo">
-        <div id="tit2"><h2>Educacion</h2></div>
+
         <div class="boton">
-            <span><button type="button" id="btn-r" onclick="cambiar_parrafo()">edit</button></span>
-            <span><button type="button" id="btn-agre" onclick="cambiar_parrafo()">edit</button></span>
+            <span><button type="button" id="btn-r" >edit</button></span>
+            <span><button type="button" id="btn-agre" >edit</button></span>
         </div>
+        <div id="tit2"><h1>Educación</h1></div>
     </div>
     <ul class="items-list">
-        <h2>Escuela</h2>
+        
         <!-- <li> -->
             
             <!-- <div class="data-conteiner">
@@ -24,13 +25,23 @@
             </div> -->
 
         <!-- </li> -->
-        <li><p> 
-            <img src="../../../assets/images/foto.jpg " width="100" height="100" align="left">  Texto tan extenso como queramos que cubrirá la parte derecha de la imagen. Sigo poniendo texto para que se vea el efecto, Bla bla bla bla bla bla bla... 
-            </p>
-            <p>inicio-fin</p>
+        <li *ngFor="let educacion of educacionList">
+            <div class="data-cont">
+                <h2>{{educacion.escuela}}</h2>
+                <!-- <div class="btn-edit">
+                    <a class="btn btn-right" href="#"><i class="fa fa-pen"></i></a>
+                </div> -->
+
+                <p> 
+                <img [src]="educacion.logo" width="100" height="100" align="left">{{educacion.titulo}}                </p>
+                <p>{{educacion.inicio}}{{educacion.fin}}</p>
+                <div class="boton">
+                    <span><button type="button" id="btn-r">edit</button></span>
+                </div>
+        </div>
+
+        <br>
         </li>
-        <li>ca</li>
-        <li>bie?</li>
     </ul>
 
 
