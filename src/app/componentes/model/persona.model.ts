@@ -6,7 +6,7 @@ export class Persona{
     descrip: string;
     foto: string;
 
-    constructor(id: number, nombre: string,apellido: string,cargo: string,descrip: string,foto: string){
+    constructor(nombre: string,apellido: string,cargo: string,descrip: string,foto: string){
         this.nombre = nombre;
         this.apellido =apellido;
         this.cargo = cargo;

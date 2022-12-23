@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { PersonaService } from 'src/app/servicios/persona.service';
+import { Persona } from '../model/persona.model';
 
 @Component({
   selector: 'app-acerca-de-mi',
@@ -7,13 +8,13 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./acerca-de-mi.component.css']
 })
 export class AcercaDeMiComponent implements OnInit {
-acercami:any;
-  constructor(private datosPortfolio:PortfolioService) { }
+  //en amarillo y mayuculas el objeto...en minuscula la propiedad 
+persona: Persona = new Persona("","","","","");
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-    this.acercami = data});
+    this.personaService.getPersona().subscribe(data => this.persona = data)
+
   }
 
 }
