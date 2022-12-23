@@ -13,7 +13,7 @@ import { HardSoftSkillsComponent } from './componentes/hard-soft-skills/hard-sof
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { NavComponent } from './componentes/nav/nav.component';
-import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+// import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 
 
@@ -27,7 +27,7 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
     HardSoftSkillsComponent,
     ProyectosComponent,
     NavComponent,
-    IniciarSesionComponent,
+    // IniciarSesionComponent,
     PortfolioComponent
   ],
   imports: [

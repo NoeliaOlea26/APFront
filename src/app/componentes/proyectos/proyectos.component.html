@@ -1,33 +1,41 @@
 <div class="contenedor">
-    <h1>Proyectos</h1>
+    <div class="titulo">
+        <div id="tit2"><h1>Proyectos</h1></div>
+        <div class="btn-edit">
+            <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
+        </div>
+  
+    </div>
     <section class="molde">
         <!-- <div class="caja_padre">
             <div class="img">
                 <img src="./img/61391.jpg" width="100%" height="100%" />
             </div>
         </div> -->
-        <div class="descripcion1">
+        <ng-container *ngFor="let proyecto of proyectoList">
+             <div class="descripcion1">
             <div class="descripcion">
-            <h2>Descripcion</h2>
+            <h2>{{proyecto.nombre}}</h2>
         <div class="data-conteiner">
             <a href="#">
                 <div class="logo- image-conteiner">
-                    <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
+                    <img [src]="proyecto.captura" width="300" height="300" class="img-thumbnail">
                 </div>
                 <div class="info">
                     <div>
-                        <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
+                                               <p>{{proyecto.anio}}</p>
                     </div>
                 </div>
             </a>
         </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
+            <p>{{proyecto.descripcion}}</p>
+                <p>{{proyecto.link}}</p>
             </div>
-    </div>
 
-        <div class="descripcion1">
+    </div>
+</ng-container>
+
+        <!-- <div class="descripcion1">
                 <div class="descripcion">
                 <h2>Descripcion</h2>
             <div class="data-conteiner">
@@ -66,7 +74,7 @@
                 dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
                 veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
             </div>
-    </div>
+    </div> -->
 
     </section>
     <!-- <section class="molde">

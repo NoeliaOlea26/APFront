@@ -1,4 +1,4 @@
-{"descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
+{"descrip": "truuuuuuuuuuuuuuuuuuuuulala",
 "nombre": "Noelia R Olea",
 "cargo": "-Desarrollador Web Full Stack Jr-", 
 "fotoPer": "../../../assets/images/foto.jpg", 
@@ -69,24 +69,24 @@
 "proyectos":[
 {
     "nombre": "Mi Portfolio",
-    "año": "2022",
-    "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
+    "anio": "2022",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur ade nobis! Atque!",
     "link": "asdfdsfsdf",
-    "captura": "sadsadas"
+    "captura": "../../../assets/images/MiPortfolio1.png"
 },
 {
     "nombre": "CRUEW",
-    "año": "2022",
+    "anio": "2022",
     "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
     "link": "asdfdsfsdf",
-    "captura": "sadsadas"
+    "captura": "../../../assets/images/Crew1.png"
 },
 {
     "nombre": "Super",
-    "año": "2022",
+    "anio": "2022",
     "descripcion": "truuuuuuuuuuuuuuuuuuuuulala",
     "link": "asdfdsfsdf",
-    "captura": "sadsadas"
+    "captura": "../../../assets/images/super1.png"
 }
 ]
 }
