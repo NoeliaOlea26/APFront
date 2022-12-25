@@ -1,14 +1,40 @@
 <section class="cuadro">
-    <div>
-    <div class="titulo">
-        <h1>Experiencia</h1>
-        <div class="btn-edit">
-            <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
-        </div>
-    </div>
 
+<div class="titulo">
+    <h1>Experiencia</h1>
+    <!-- <div class="btn-edit">
+        <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
+    </div> -->
+
+
+    <!-- <button type="button" class="btn btn-dark" routerLink ="nvaexp">+ </button> -->
 </div>
-    <div class="unaSecc">
+<div class="text-center">
+    <button type="button" class="btn btn-dark " routerLink ="/nvaexp">Agregar </button>
+</div>
+
+    <ul class="items-list">
+        <li *ngFor="let Experiencia of experiencia">
+            <div class="unaSecc">
+                <div class="boton">
+                    <div class="btn-edit">
+                        <a class="btn btn-right" href="#"><i class="fa fa-pen"></i></a>
+                    </div>
+                    <div class="btn-edit">
+                            <a class="btn btn-right" href="#"><i class="fa fa-trash"style="color: white"></i></a>
+                    </div>
+                </div>
+                <div >
+                    <p id="text-AcercaMi"> {{Experiencia.empresa}} {{Experiencia.inicio}} {{Experiencia.fin}}<img [src]="Experiencia.logo" width="100" height="100" align="right"></p>
+                    <p>{{Experiencia.puesto}}</p>
+                    <p> {{Experiencia.descripcionAct}}   </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- <div class="unaSecc">
         <div class="boton">
             <button type="button" id="btn-elim" >edit</button>
             <button type="button" id="btn-modif" >edit</button>
@@ -16,23 +42,22 @@
         <div >
             <p id="text-AcercaMi">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, perferendis earum architecto, enim nam illo accusantium quis perspiciatis sed id eum odio dolores atque voluptatem incidunt hic nesciunt iste saepe?</p>
         </div>
-    </div>
+    </div> -->
 
-    <div class="unaSecc">
-        <div class="boton">
-            <button type="button" id="btn-elim" >edit</button>
-            <button type="button" id="btn-modif" >edit</button>
-        </div>
-        <div >
-            <p id="text-AcercaMi">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, perferendis earum architecto, enim nam illo accusantium quis perspiciatis sed id eum odio dolores atque voluptatem incidunt hic nesciunt iste saepe?</p>
-        </div>
-    </div>
-
-    <div>
+    <!-- <div>
         <input id="editAcercaMi" type="text" oninput="ingreso(this.value)" style="display:none">
     </div>
     <i class="fa-solid fa-user"></i>
     <i class="fi fi-rr-editar"></i>
     <i class="fi fi-rs-corazón"></i>
-    <input type="file" id="file1" onchange="showFile(this)">
+    <input type="file" id="file1" onchange="showFile(this)"> -->
+<!-- 
+    <div class="boton">
+        <div class="btn-edit">
+            <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
+        </div>
+            <div class="btn-edit">
+                <a class="btn btn-right" href="#"><i class="fa fa-trash"style="font-size:24px color: white"></i></a>
+        </div>
+    </div> -->
 </section><br>

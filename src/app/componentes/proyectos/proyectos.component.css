@@ -6,6 +6,10 @@ h1{
         height: auto;
         margin-top: 0;
 }
+.titulo{
+    margin: 20px;
+    margin-bottom: 0px;
+}
 /* .lisProy ul{
     margin: 0;
     padding: 0;
