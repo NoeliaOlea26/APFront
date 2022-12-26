@@ -15,6 +15,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { NavComponent } from './componentes/nav/nav.component';
 // import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { NvoexpComponent } from './componentes/experiencia/nvoexp.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,13 +30,15 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
     ProyectosComponent,
     NavComponent,
     // IniciarSesionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NvoexpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 100,
