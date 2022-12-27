@@ -17,6 +17,7 @@ import { NavComponent } from './componentes/nav/nav.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { NvoexpComponent } from './componentes/experiencia/nvoexp.component';
 import { FormsModule } from '@angular/forms';
+import { EditexpComponent } from './componentes/experiencia/editexp.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     // IniciarSesionComponent,
     PortfolioComponent,
-    NvoexpComponent
+    NvoexpComponent,
+    EditexpComponent
   ],
   imports: [
     BrowserModule,
