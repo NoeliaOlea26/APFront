@@ -11,8 +11,8 @@ const routes: Routes = [
 // {path:'', redirectTo: 'iniciar-sesion',pathMatch: 'full'}
 {path:'', redirectTo: 'portfolio',pathMatch: 'full'},
 {path:'', component:PortfolioComponent},
-{path:'editar/:id', component:EditexpComponent},
-{path: 'experiencia/nuevo', component:NvoexpComponent}
+{path:'editarexp/:id', component:EditexpComponent},
+{path: 'nuevaexp', component:NvoexpComponent}
 ];
 
 @NgModule({

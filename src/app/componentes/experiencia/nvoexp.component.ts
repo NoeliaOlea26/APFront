@@ -28,7 +28,7 @@ export class NvoexpComponent implements OnInit {
       alert("añadido correctamente");
       this.router.navigate(['']);
     }, err =>{
-      alert("FALLO añadido correctamente");
+      alert("FALLO al añadir");
       this.router.navigate(['']);
     }
     )

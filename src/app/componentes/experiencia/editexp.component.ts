@@ -18,7 +18,7 @@ exp: Experiencia= null;
     this.experienciaS.findexp(id).subscribe(data => {
       this.exp = data;
     }, err => {
-      alert("Error añ modif exp");
+      alert("Error al MMMM exp");
       this.router.navigate(['']);
     }
       )
