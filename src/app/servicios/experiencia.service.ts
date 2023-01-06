@@ -10,23 +10,28 @@ export class ExperienciaService {
   URL: string = 'http://localhost:8080/experiencia/';
   constructor(private http: HttpClient) { }
   
-  public getExperiencia(id: number): Observable<Experiencia>{
-    return this.http.get<Experiencia>(this.URL+'traer/${id}');
+  public findexp(id: number): Observable<Experiencia>{
+    return this.http.get<Experiencia>(this.URL + 'traer/${id}');
 }
 
-  public lista(): Observable<Experiencia[]>{
+  public getExperiencias(): Observable<Experiencia[]>{
     return this.http.get<Experiencia[]>(this.URL+'mostrar');
   }
 
-  public nvo(experiencia: Experiencia): Observable<any>{
+  public createExp(experiencia: Experiencia): Observable<any>{
     return this.http.post<any>(this.URL+'nuevo', experiencia);
   }
 
-  public update(id: number, experiencia: Experiencia): Observable<any>{
+  public editExperiencia(id: number, experiencia: Experiencia): Observable<any>{
     return this.http.put<any>(this.URL+'editar/${id}',experiencia);
   }
   
-  public delete(id: number): Observable<any>{
+  public deleteExperiencia(id: number): Observable<any>{
     return this.http.delete<any>(this.URL+'borrar/${id}');
   }
+
+  deleteUser(): Observable<any>{
+    return this.http.delete('https://reqres.in/api/users/2');
+  }
+  
 }

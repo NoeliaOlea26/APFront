@@ -1,27 +1,27 @@
 <div class="conteiner">
     <div class="row">
         <div>
-            <form (ngSubmit)="onCreate()"> 
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm"> 
                 <!-- novalidate #f="ngForm" -->
 <div class="form-group">
     <label for="empresa">Nombre Empresa</label>
-    <input type="text" class="form-control" id="empresa" nombre="empresa" [(ngModel)]="empresa" required>
+    <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required>
 </div>
 <div class="form-group">
     <label for="puesto">Puesto</label>
-    <input type="text" class="form-control" id="puesto" nombre="puesto" [(ngModel)]="puesto" required>
+    <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required>
 </div>
 <div class="form-group">
     <label for="inicio">Año de inicio</label>
-    <input type="text" class="form-control" id="inicio" nombre="inicio" [(ngModel)]="inicio" required>
+    <input type="text" class="form-control" id="inicio" name="inicio" [(ngModel)]="inicio" required>
 </div>
 <div class="form-group">
     <label for="fin">Año de fin</label>
-    <input type="text" class="form-control" id="fin" nombre="fin" [(ngModel)]="fin" required>
+    <input type="text" class="form-control" id="fin" name="fin" [(ngModel)]="fin" required>
 </div>
 <div class="form-group">
     <label for="descrip">Descripcion Actividades</label>
-    <input type="text" class="form-control" id="descrip" nombre="descrip" [(ngModel)]="descripcionAct" required>
+    <input type="text" class="form-control" id="descrip" name="descrip" [(ngModel)]="descripcionAct" required>
 </div>
 <br>
 <div>

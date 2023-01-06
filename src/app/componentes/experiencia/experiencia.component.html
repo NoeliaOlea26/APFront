@@ -10,7 +10,8 @@
     <!-- <button type="button" class="btn btn-dark" routerLink ="nvaexp">+ </button> -->
 </div>
 <div class="text-center">
-    <button type="button" class="btn btn-dark " routerLink ="/nvaexp">Agregar </button>
+    <button type="button" class="btn btn-dark " routerLink ="/experiencia/nuevo">Agregar </button>
+    <a class="btn btn-right" href="experiencia/nuevo"><i class="fa fa-pen"style="font-size:20px"></i></a>
 </div>
 
     <ul class="items-list">
@@ -18,12 +19,14 @@
             <div class="unaSecc">
                 <div class="boton">
                     <div class="btn-edit">
-                        <a class="btn btn-right" href="/editexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></a>
+                        <a class="btn btn-right" href="experiencia/editar/{{Experiencia.id}}"><i class="fa fa-pen"></i></a>
                     </div>
+<button class="btn btn-light" routerLink="/experiencia/editar/{{Experiencia.id}}"><i class="fa fa-pen"></i>
 
-                    <div class="btn-edit">
+</button>
+                    <!-- <div class="btn-edit">
                         <button type="button"routerLink ="/editexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></button>
-                    </div>
+                    </div> -->
 
 
                     

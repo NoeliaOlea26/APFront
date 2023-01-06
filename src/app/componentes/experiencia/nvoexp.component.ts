@@ -24,7 +24,7 @@ export class NvoexpComponent implements OnInit {
 
   onCreate(): void {
     const exp = new Experiencia(this.empresa, this.puesto, this.inicio, this.fin, this.descripcionAct, this.logo);
-    this.expS.nvo(exp).subscribe(data =>{
+    this.expS.createExp(exp).subscribe(data =>{
       alert("añadido correctamente");
       this.router.navigate(['']);
     }, err =>{

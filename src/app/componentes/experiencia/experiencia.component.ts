@@ -17,7 +17,7 @@ experiencia: Experiencia[]=[];
   }
 
   cargar(): void {
-    this.experienciaS.lista().subscribe(
+    this.experienciaS.getExperiencias().subscribe(
       data => {this.experiencia = data;
       }
     )
@@ -25,7 +25,7 @@ experiencia: Experiencia[]=[];
 
  borrar(id?: number){
   if(id != undefined){
-    this.experienciaS.delete(id).subscribe(
+    this.experienciaS.deleteExperiencia(id).subscribe(
       data =>{
         this.cargar();
       }, err =>{
@@ -34,5 +34,6 @@ experiencia: Experiencia[]=[];
     )
   }
  }
+
 
 }

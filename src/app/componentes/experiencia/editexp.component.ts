@@ -15,7 +15,7 @@ exp: Experiencia= null;
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.experienciaS.getExperiencia(id).subscribe(data => {
+    this.experienciaS.findexp(id).subscribe(data => {
       this.exp = data;
     }, err => {
       alert("Error añ modif exp");
@@ -26,9 +26,9 @@ exp: Experiencia= null;
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.experienciaS.update(id, this.exp).subscribe(
+    this.experienciaS.editExperiencia(id, this.exp).subscribe(
       data => {
-        this.router.navigate([' ']);
+        this.router.navigate(['']);
     }, err => {
       alert("Error al modificar exp");
       this.router.navigate(['']);

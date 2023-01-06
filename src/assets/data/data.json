@@ -65,6 +65,13 @@
     "inicio": "2022",
     "fin": "",
     "logo": "../../../assets/images/accenture.jpg"
+},
+{
+    "escuela": "Arturo Illia",
+    "titulo": "Bachiller en Administracion y Economia",
+    "inicio": "2011",
+    "fin": "-2015",
+    "logo": "../../../assets/images/logoColegio1.jpg"
 }],
 "proyectos":[
 {
