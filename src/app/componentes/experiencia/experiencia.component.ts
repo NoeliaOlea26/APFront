@@ -11,11 +11,9 @@ export class ExperienciaComponent implements OnInit {
 // experiencia: Experiencia = new Experiencia("","","","","","");
 experiencia: Experiencia[]=[];
   constructor(public experienciaS: ExperienciaService) { }
-
   ngOnInit(): void {
     this.cargar();
   }
-
   cargar(): void {
     this.experienciaS.getExperiencias().subscribe(
       data => {this.experiencia = data;

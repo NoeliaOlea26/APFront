@@ -30,13 +30,7 @@ export class ExperienciaService {
     return this.http.delete<any>(this.URL+`borrar/${id}`);
   }//'borrar/${id}'
 
-  deleteUser(): Observable<any>{
-    return this.http.delete('https://reqres.in/api/users/2');
-  }
-  deleteTask(experiencia:Experiencia): Observable<Experiencia>{
-    const url = `${this.URL}/${experiencia.id}`
-    return this.http.delete<Experiencia>(url)
-  }
+
 
 
 }

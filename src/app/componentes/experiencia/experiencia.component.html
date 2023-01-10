@@ -2,12 +2,6 @@
 
 <div class="titulo">
     <h1>Experiencia</h1>
-    <!-- <div class="btn-edit">
-        <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
-    </div> -->
-
-
-    <!-- <button type="button" class="btn btn-dark" routerLink ="nvaexp">+ </button> -->
 </div>
 <div class="text-center">
     <button type="button" class="btn btn-dark " routerLink ="/nuevaexp">Agregar </button>
@@ -21,21 +15,14 @@
                     <div class="btn-edit">
                         <a class="btn btn-right" href="editarexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></a>
                     </div>
-<button class="btn btn-light" routerLink="/editarexp/{{Experiencia.id}}"><i class="fa fa-pen"></i>
-
-</button>
-                    <!-- <div class="btn-edit">
-                        <button type="button"routerLink ="/editexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></button>
-                    </div> -->
-
-
-                    
-                    <div class="btn-delete">
-                            <a class="btn btn-right" href="#"(click)="borrar(Experiencia.id)"><i class="fa fa-trash"style="color: white"></i></a>
+<!-- <button class="btn btn-light" routerLink="/editarexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></button> -->
+                        <div class="btn-delete">
+                        <a class="btn btn-right" href="#"(click)="borrar(Experiencia.id)"><i class="fa fa-trash"style="color: white"></i></a>
                     </div>
                 </div>
                 <div >
-                    <p id="text-AcercaMi"> {{Experiencia.empresa}} {{Experiencia.inicio}} {{Experiencia.fin}}<img [src]="Experiencia.logo" width="100" height="100" align="right"></p>
+                    <p id="text-AcercaMi"> {{Experiencia.empresa}} {{Experiencia.inicio}} 
+                        {{Experiencia.fin}}<img [src]="Experiencia.logo" width="100" height="100" align="right"></p>
                     <p>{{Experiencia.puesto}}</p>
                     <p> {{Experiencia.descripcionAct}}   </p>
                 </div>

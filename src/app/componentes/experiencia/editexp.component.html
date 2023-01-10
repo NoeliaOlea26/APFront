@@ -1,32 +1,29 @@
 <div class="conteiner" *ngIf="exp">
     <div class="row">
         <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm"> 
-                <!-- novalidate #f="ngForm" -->
+            <form #f="ngForm"  (ngSubmit)="onUpdate()"> 
 <div class="form-group">
     <label for="empresa">Nombre Empresa</label>
-    <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="exp.empresa" required>
-</div>
+    <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="exp.empresa" required></div>
 <div class="form-group">
     <label for="puesto">Puesto</label>
-    <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="exp.puesto" required>
-</div>
+    <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="exp.puesto" required></div>
 <div class="form-group">
     <label for="inicio">Año de inicio</label>
-    <input type="text" class="form-control" id="inicio" name="inicio" [(ngModel)]="exp.inicio" required>
-</div>
+    <input type="text" class="form-control" id="inicio" name="inicio" [(ngModel)]="exp.inicio" required></div>
 <div class="form-group">
     <label for="fin">Año de fin</label>
-    <input type="text" class="form-control" id="fin" name="fin" [(ngModel)]="exp.fin" required>
-</div>
+    <input type="text" class="form-control" id="fin" name="fin" [(ngModel)]="exp.fin" required></div>
 <div class="form-group">
     <label for="descrip">Descripcion Actividades</label>
-    <input type="text" class="form-control" id="descrip" name="descrip" [(ngModel)]="exp.descripcionAct" required>
-</div>
+    <input type="text" class="form-control" id="descrip" name="descrip" [(ngModel)]="exp.descripcionAct" required></div>
+<div class="form-group">
+    <label for="descrip">Descripcion Logo</label>
+    <input type="text" class="form-control" id="logo" name="logo" [(ngModel)]="exp.logo" required></div>
+<!-- ../../../assets/images/urna-logo.jpg -->
 <br>
 <div>
-    <!-- class="text-center" -->
-    <button class="btn btn-primary"> Editar </button>
+    <button type="submit" class="btn btn-primary"> Editar </button>
 </div>
             </form>
 <!-- <div class="text-center"><button class="btn btn-danger" routerLink=" "> Cancelar</button> </div> -->

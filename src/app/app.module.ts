@@ -18,6 +18,8 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { NvoexpComponent } from './componentes/experiencia/nvoexp.component';
 import { FormsModule } from '@angular/forms';
 import { EditexpComponent } from './componentes/experiencia/editexp.component';
+import { EditAcercaDeMiComponent } from './componentes/acerca-de-mi/edit-acerca-de-mi.component';
+import { EditDescripComponent } from './componentes/encabezado/edit-descrip.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { EditexpComponent } from './componentes/experiencia/editexp.component';
     // IniciarSesionComponent,
     PortfolioComponent,
     NvoexpComponent,
-    EditexpComponent
+    EditexpComponent,
+    EditAcercaDeMiComponent,
+    EditDescripComponent
   ],
   imports: [
     BrowserModule,
