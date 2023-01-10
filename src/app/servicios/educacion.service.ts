@@ -30,7 +30,4 @@ export class EducacionService {
     return this.http.delete<any>(this.URL+`borrar/${id}`);
   }//'borrar/${id}'
 
-
-
-
 }

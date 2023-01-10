@@ -22,6 +22,8 @@ import { EditAcercaDeMiComponent } from './componentes/acerca-de-mi/edit-acerca-
 import { EditDescripComponent } from './componentes/encabezado/edit-descrip.component';
 import { EditeducComponent } from './componentes/educacion/editeduc.component';
 import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
+import { EditproyComponent } from './componentes/proyectos/editproy.component';
+import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
     EditAcercaDeMiComponent,
     EditDescripComponent,
     EditeducComponent,
-    NvoeducComponent
+    NvoeducComponent,
+    EditproyComponent,
+    NvoproyComponent
   ],
   imports: [
     BrowserModule,
