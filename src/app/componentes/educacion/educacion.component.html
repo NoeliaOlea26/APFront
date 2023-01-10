@@ -6,14 +6,10 @@
         </div> -->
     </div>
     <div class="text-center">
-        <button type="button" class="btn btn-dark " routerLink ="/nvaexp">Agregar </button>
+        <button type="button" class="btn btn-dark " routerLink ="/nuevaedu">Agregar </button>
     </div>
-
-
     <ul class="items-list">
-        
-        <!-- <li> -->
-            
+            <!-- <li> --> 
             <!-- <div class="data-conteiner">
                 <a href="#">
                     <div class="logo- image-conteiner">
@@ -27,14 +23,13 @@
                     </div>
                 </a>
             </div> -->
-
         <!-- </li> -->
-        <li *ngFor="let educacion of educacionList">
+        <li *ngFor="let educacion of educacion">
             <div class="data-cont">
                 <h2>{{educacion.escuela}}</h2>
                 <div class="btn-edit">
-                    <a class="btn btn-right" href="experiencia/nuevo"><i class="fa fa-pen"style="font-size:20px"></i></a>
-                    <a class="btn btn-right" href="#"><i class="fa fa-trash"style="font-size:20px"></i></a>
+                    <a class="btn btn-right" href="editaredu/{{educacion.id}}"><i class="fa fa-pen"style="font-size:20px"></i></a>
+                    <a class="btn btn-right" href="#"(click)="borrar(educacion.id)"><i class="fa fa-trash"style="font-size:20px"></i></a>
                 </div>
                 <!-- <div class="btn-edit">
                     <a class="btn btn-right" href="#"><i class="fa fa-pen"></i></a>
@@ -48,11 +43,8 @@
                     <span><button type="button" id="btn-r">edit</button></span>
                 </div> -->
 <br><br>
-
         </div>
-
         <br>
         </li>
     </ul>
-
 </div>

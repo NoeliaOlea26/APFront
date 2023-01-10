@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { EditexpComponent } from './componentes/experiencia/editexp.component';
 import { EditAcercaDeMiComponent } from './componentes/acerca-de-mi/edit-acerca-de-mi.component';
 import { EditDescripComponent } from './componentes/encabezado/edit-descrip.component';
+import { EditeducComponent } from './componentes/educacion/editeduc.component';
+import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { EditDescripComponent } from './componentes/encabezado/edit-descrip.comp
     NvoexpComponent,
     EditexpComponent,
     EditAcercaDeMiComponent,
-    EditDescripComponent
+    EditDescripComponent,
+    EditeducComponent,
+    NvoeducComponent
   ],
   imports: [
     BrowserModule,
