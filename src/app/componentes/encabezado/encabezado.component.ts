@@ -18,6 +18,7 @@ export class EncabezadoComponent implements OnInit {
     this.personaService.getPersona().subscribe(data => this.persona = data)
 
   }
+  
 
   // miportfolio:any;
 

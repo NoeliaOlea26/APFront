@@ -1,1 +1,13 @@
-<p>edit-acerca-de-mi works!</p>
+<div class="conteiner" *ngIf="persona">
+    <form #f="ngForm"  (ngSubmit)="onUpdate()"> 
+        <div class="form-group">
+            <label for="descrip">Descripción</label>
+            <input type="text" class="form-control" id="descrip" name="descrip" 
+            [(ngModel)]="persona.descrip" required></div>
+            <div>
+                <button type="submit" class="btn btn-primary"> 
+                    Editar </button>
+            </div>
+
+    </form>
+</div>

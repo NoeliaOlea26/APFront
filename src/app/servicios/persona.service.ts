@@ -15,7 +15,9 @@ export class PersonaService {
   public update(id: number, persona: Persona): Observable<any>{
     return this.http.put<any>(this.URL+`editar/${id}`,persona);
   }
-
+  public findper(id: number): Observable<Persona>{
+    return this.http.get<Persona>(this.URL +`traer/${id}`);
+}
   
 
 }

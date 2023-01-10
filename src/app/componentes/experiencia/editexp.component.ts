@@ -9,6 +9,7 @@ import { Experiencia } from '../model/experiencia.model';
 })
 export class EditexpComponent implements OnInit {
 exp: Experiencia= null;
+
   constructor(private experienciaS: ExperienciaService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
   ngOnInit(): void {
