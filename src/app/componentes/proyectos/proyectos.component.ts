@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { ProyectoService } from 'src/app/servicios/proyecto.service';
+import { Proyecto } from '../model/proyecto.model';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,14 +8,29 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-proyectoList: any;
-  constructor(private datosPortfolio: PortfolioService) { }
-
+  proyecto: Proyecto[]=[];
+  constructor(public proyectoS: ProyectoService) { }
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.proyectoList = data.proyectos;
-    });
+    this.cargar();
   }
+  cargar(): void {
+    this.proyectoS.getProyectos().subscribe(
+      data => {this.proyecto = data;
+      }
+    )
+  }
+
+ borrar(id?: number){
+  if(id != undefined){
+    this.proyectoS.deleteProyecto(id).subscribe(
+      data =>{
+        this.cargar();
+      }, err =>{
+        alert("no se pudo eliminar");
+      }
+    )
+  }
+ }
+
 
 }

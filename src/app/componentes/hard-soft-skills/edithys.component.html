@@ -1,0 +1,33 @@
+<div class="conteiner" *ngIf="skill">
+    <div class="row">
+        <div>
+            <form #f="ngForm"  (ngSubmit)="onUpdate()"> 
+<div class="form-group">
+    <label for="titulo">Nombre Empresa</label>
+    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="skill.titulo" required></div>
+<div class="form-group">
+    <label for="porcentaje">Puesto</label>
+    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required></div>
+<div class="form-group">
+    <label for="color">Año de inicio</label>
+    <input type="text" class="form-control" id="color" name="color" [(ngModel)]="skill.color" required></div>
+<div class="form-group">
+    <label for="fontsize">Año de fin</label>
+    <input type="text" class="form-control" id="fontsize" name="fontsize" [(ngModel)]="skill.fontsize" required></div>
+<div class="form-group">
+    <label for="outsc">Color externo</label>
+    <input type="text" class="form-control" id="outsc" name="outsc" [(ngModel)]="skill.outSC" required></div>
+<div class="form-group">
+    <label for="innsc">Color interno</label>
+    <input type="text" class="form-control" id="innsc" name="innsc" [(ngModel)]="skill.innSC" required></div>
+<!-- ../../../assets/images/urna-logo.jpg -->
+<br>
+<div>
+    <button type="submit" class="btn btn-primary"> Editar </button>
+</div>
+            </form>
+<!-- <div class="text-center"><button class="btn btn-danger" routerLink=" "> Cancelar</button> </div> -->
+        </div>
+    </div>
+</div>
+

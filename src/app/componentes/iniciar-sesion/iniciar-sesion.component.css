@@ -1,8 +1,14 @@
-/* form{
+form{
     margin: 10px 20px 0px 50px;
     align-content: center;
 }
 .form-label{
     text-align: center;
     font-size: 30px;
-} */
+} 
+body{
+    background-color: aliceblue;
+    border: solid 1px #000;
+    border-radius: 10px;
+    
+}

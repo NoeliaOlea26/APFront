@@ -1,1 +1,29 @@
-<p>nvoproy works!</p>
+<div class="conteiner" >
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm"> 
+<div class="form-group">
+    <label for="nombre">Nombre </label>
+    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required></div>
+<div class="form-group">
+    <label for="anio">anio</label>
+    <input type="text" class="form-control" id="anio" name="anio" [(ngModel)]="anio" required></div>
+<div class="form-group">
+    <label for="descripcion">descripcion</label>
+    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required></div>
+<div class="form-group">
+    <label for="link">link</label>
+    <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required></div>
+<div class="form-group">
+    <label for="captura">Ruta captura</label>
+    <input type="text" class="form-control" id="captura" name="captura" [(ngModel)]="captura" required></div>
+<!-- ../../../assets/images/urna-logo.jpg -->
+<br>
+<div>
+    <button type="submit" class="btn btn-primary"> Editar </button>
+</div>
+            </form>
+<!-- <div class="text-center"><button class="btn btn-danger" routerLink=" "> Cancelar</button> </div> -->
+        </div>
+    </div>
+</div>

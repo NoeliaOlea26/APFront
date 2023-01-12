@@ -24,6 +24,8 @@ import { EditeducComponent } from './componentes/educacion/editeduc.component';
 import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
 import { EditproyComponent } from './componentes/proyectos/editproy.component';
 import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
+import { NvohysComponent } from './componentes/hard-soft-skills/nvohys.component';
+import { EdithysComponent } from './componentes/hard-soft-skills/edithys.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
     EditeducComponent,
     NvoeducComponent,
     EditproyComponent,
-    NvoproyComponent
+    NvoproyComponent,
+    NvohysComponent,
+    EdithysComponent
   ],
   imports: [
     BrowserModule,

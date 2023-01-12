@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProyectoService } from 'src/app/servicios/proyecto.service';
-import { Proyecto } from '../model/proyecto.model';
+import { SkillService } from 'src/app/servicios/skill.service';
+import { Skill } from '../model/skill.model';
 
 @Component({
-  selector: 'app-editproy',
-  templateUrl: './editproy.component.html',
-  styleUrls: ['./editproy.component.css']
+  selector: 'app-edithys',
+  templateUrl: './edithys.component.html',
+  styleUrls: ['./edithys.component.css']
 })
-export class EditproyComponent implements OnInit {
+export class EdithysComponent implements OnInit {
+  skill: Skill= null;
 
-  proy: Proyecto= null;
-
-  constructor(private proyectoS: ProyectoService, private activatedRouter: ActivatedRoute,
+  constructor(private SkillS: SkillService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.proyectoS.findProyecto(id).subscribe(data => {
-      this.proy = data;
+    this.SkillS.findSkill(id).subscribe(data => {
+      this.skill = data;
     }, err => {
       alert("Error al MODIFICAR educ");
       this.router.navigate(['']);
@@ -25,11 +24,12 @@ export class EditproyComponent implements OnInit {
   }
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    console.log(this.proy);
-    this.proyectoS.editProyecto(id, this.proy).subscribe(
+    console.log(this.skill);
+    this.SkillS.editSkill(id, this.skill).subscribe(
       data => {
-       // console.log(this.exp);
+        console.log(this.skill);
         this.router.navigate(['']);
+        alert("modificado correcto");
     }, err => {
       console.log(err);
       alert("Error al modificar educacion");

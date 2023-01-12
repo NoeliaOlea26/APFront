@@ -6,12 +6,16 @@ import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
 import { EditDescripComponent } from './componentes/encabezado/edit-descrip.component';
 import { EditexpComponent } from './componentes/experiencia/editexp.component';
 import { NvoexpComponent } from './componentes/experiencia/nvoexp.component';
-// import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { EdithysComponent } from './componentes/hard-soft-skills/edithys.component';
+import { NvohysComponent } from './componentes/hard-soft-skills/nvohys.component';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { EditproyComponent } from './componentes/proyectos/editproy.component';
+import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
 
 const routes: Routes = [
   {path: 'portfolio', component:PortfolioComponent},
-// {path: 'iniciar-sesion', component:IniciarSesionComponent},
+{path: 'iniciar-sesion', component:IniciarSesionComponent},
 // {path:'', redirectTo: 'iniciar-sesion',pathMatch: 'full'}
 {path:'', redirectTo: 'portfolio',pathMatch: 'full'},
 {path:'', component:PortfolioComponent},
@@ -20,7 +24,11 @@ const routes: Routes = [
 {path: 'editarper/:id', component:EditDescripComponent},
 {path: 'editardescrip/:id', component:EditAcercaDeMiComponent},
 {path:'editaredu/:id', component:EditeducComponent},
-{path: 'nuevaedu', component: NvoeducComponent}
+{path: 'nuevaedu', component: NvoeducComponent},
+{path: 'editarproy/:id', component:EditproyComponent},
+{path: 'nuevoproy', component:NvoproyComponent},
+{path: 'nuevaskill', component:NvohysComponent},
+{path: 'editarskill/:id', component:EdithysComponent}
 ];
 
 @NgModule({
