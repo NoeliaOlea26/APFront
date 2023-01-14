@@ -7,7 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  <form class= "m-5">
+
+  <form class= "m-5"  >
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Usuario</label>
       <input #usuario type="text" class="form-control" id="usuario">
@@ -19,6 +20,8 @@
     <!-- <button type="submit" class="btn btn-primary" onclick="getInputValue(usuario.value, contrasenia.value)">Entrar</button> -->
     <button  type="button"  class="btn btn-primary"
        (click)="getInputValue(usuario.value, contrasenia.value)"  >  Entrar  </button>
+       <button  type="button"  class="btn btn-primary"
+       (click)="login(usuario.value, contrasenia.value)"  >  test  </button>
   </form>
  
 </body>

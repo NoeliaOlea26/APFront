@@ -26,6 +26,7 @@ import { EditproyComponent } from './componentes/proyectos/editproy.component';
 import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
 import { NvohysComponent } from './componentes/hard-soft-skills/nvohys.component';
 import { EdithysComponent } from './componentes/hard-soft-skills/edithys.component';
+import { LoginpruebComponent } from './componentes/loginprueb/loginprueb.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { EdithysComponent } from './componentes/hard-soft-skills/edithys.compone
     EditproyComponent,
     NvoproyComponent,
     NvohysComponent,
-    EdithysComponent
+    EdithysComponent,
+    LoginpruebComponent
   ],
   imports: [
     BrowserModule,

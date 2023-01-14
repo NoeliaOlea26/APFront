@@ -9,6 +9,7 @@ import { NvoexpComponent } from './componentes/experiencia/nvoexp.component';
 import { EdithysComponent } from './componentes/hard-soft-skills/edithys.component';
 import { NvohysComponent } from './componentes/hard-soft-skills/nvohys.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { LoginpruebComponent } from './componentes/loginprueb/loginprueb.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { EditproyComponent } from './componentes/proyectos/editproy.component';
 import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
@@ -28,7 +29,9 @@ const routes: Routes = [
 {path: 'editarproy/:id', component:EditproyComponent},
 {path: 'nuevoproy', component:NvoproyComponent},
 {path: 'nuevaskill', component:NvohysComponent},
-{path: 'editarskill/:id', component:EdithysComponent}
+{path: 'editarskill/:id', component:EdithysComponent},
+{path: 'login', component:LoginpruebComponent}
+//LoginpruebComponent
 ];
 
 @NgModule({
