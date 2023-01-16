@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/servicios/login.service';
 
 @Component({
@@ -8,13 +9,13 @@ import { LoginService } from 'src/app/servicios/login.service';
 })
 export class NavComponent implements OnInit {
   isLogged: boolean = false;
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit(): void {
-    console.log("nav"+this.isLogged);
-    console.log(this.loginService.isLogg);
-    this.isLogged =this.loginService.isLogg;
-    console.log("exitosamente");
+    // console.log("nav"+this.isLogged);
+    // console.log(this.loginService.isLogg);
+  this.isLogged =this.loginService.isLogg;
+    // console.log("exitosamente");
 
   }
   salir(){
@@ -23,6 +24,7 @@ export class NavComponent implements OnInit {
     console.log('salir132');
     this.isLogged= false;
     console.log(this.isLogged);
+    this.router.navigate(['/iniciar-sesion']);
 
   }
 }

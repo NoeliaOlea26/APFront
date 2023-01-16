@@ -17,30 +17,32 @@ export class IniciarSesionComponent implements OnInit {
         console.log(this.isLogged);
 
        //this.Login();
-        throw new Error('Method not implemented.');
+        //throw new Error('Method not implemented.');
     }
     public getInputValue(inputValue:string, inputValue2:string){
       var estado = false;
       console.log(inputValue, inputValue2);
+      console.log("inputs");
       //inputValue = inputValue.trim();
       if (inputValue=='admin' && inputValue2=='admin') {
       this.isLogged =true;
       this.router.navigate(['']);
       estado = true;
-      return console.log("exito", this.isLogged);}
+      return console.log("exito InciarSesC", this.isLogged);}
       else{
         alert('contraseña no valida, ingrese nuevamente');
       }
     } 
+    //con servicio
     login(inputValue:string, inputValue2:string){
-      console.log("antes"+this.isLogged);
+      console.log("antesInciarSesC"+this.isLogged);
       this.loginService.login(inputValue, inputValue2);
       if(this.loginService.isLogg===true){
         this.isLogged =true;
-        console.log("dps"+this.isLogged);
-      }
+        console.log("dpsInciarSesC"+this.isLogged);
+      }//con servicio
       //this.isLogged =true;
-      console.log("dps"+this.isLogged);
+      console.log("dpsInciarSesC no ingre"+this.isLogged);
      // this.router.navigate(['']);
     }
 //this.form = this.formBuilder.group({

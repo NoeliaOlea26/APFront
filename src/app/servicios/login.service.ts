@@ -17,7 +17,7 @@ export class LoginService implements OnInit {
     private router: Router) { }
   ngOnInit() {
     //console.log(this.login);
-    console.log(this.isLogg);
+    console.log("Est Serv Log"+this.isLogg);
   }
 
 
@@ -26,8 +26,8 @@ if (usuario==='admin' && contrasenia==='admin')
 {this.isLogg = true;
 this.router.navigate(['']);
 console.log("exitoooooooo"+this.isLogg);
-console.log("123"+usuario);
-console.log("3456"+contrasenia);
+console.log("serv"+usuario);
+console.log("serv"+contrasenia);
 }
 else{
   console.log("0000"+usuario);
