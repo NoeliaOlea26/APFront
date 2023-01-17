@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/servicios/login.service';
 import { SkillService } from 'src/app/servicios/skill.service';
 import { Skill } from '../model/skill.model';
 
@@ -10,9 +11,11 @@ import { Skill } from '../model/skill.model';
 export class HardSoftSkillsComponent implements OnInit {
 
   skill: Skill[]=[];
-  constructor(public skillS: SkillService) { }
+  isLogged: boolean = false;
+  constructor(public skillS: SkillService, private loginService: LoginService) { }
   ngOnInit(): void {
     this.cargar();
+    this.isLogged =this.loginService.isLogg;
   }
   cargar(): void {
     this.skillS.getSkills().subscribe(

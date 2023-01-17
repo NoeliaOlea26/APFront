@@ -8,7 +8,7 @@
   
     </div>
     <div class="text-center">
-        <button type="button" class="btn btn-dark " routerLink ="/nuevoproy">Agregar </button>
+        <button type="button" class="btn btn-dark " routerLink ="/nuevoproy"*ngIf="isLogged">Agregar </button>
     </div>
     <section class="molde">
         <!-- <div class="caja_padre">
@@ -35,8 +35,8 @@
             <p>{{proyecto.descripcion}}</p>
                 <p>{{proyecto.link}}</p>
                 <div class="btn-edit">
-                    <a class="btn btn-right" href="editarproy/{{proyecto.id}}"><i class="fa fa-pen"style="font-size:20px"></i></a>
-                    <a class="btn btn-right" href="#"(click)="borrar(proyecto.id)"><i class="fa fa-trash"style="font-size:20px"></i></a>
+                    <a class="btn btn-right" href="editarproy/{{proyecto.id}}"><i class="fa fa-pen"style="font-size:20px"*ngIf="isLogged"></i></a>
+                    <a class="btn btn-right" href="#"(click)="borrar(proyecto.id)"><i class="fa fa-trash"style="font-size:20px"*ngIf="isLogged"></i></a>
                 </div>
             </div>
 

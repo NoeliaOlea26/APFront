@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/servicios/login.service';
 import { PersonaService } from 'src/app/servicios/persona.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { Persona } from '../model/persona.model';
@@ -12,10 +13,12 @@ import { Persona } from '../model/persona.model';
 export class EncabezadoComponent implements OnInit {
 
   persona: Persona = new Persona("","","","","");
-  constructor(public personaService: PersonaService) { }
+  isLogged: boolean = false;
+  constructor(public personaService: PersonaService, private loginService: LoginService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => this.persona = data)
+    this.personaService.getPersona().subscribe(data => this.persona = data);
+    this.isLogged =this.loginService.isLogg;
 
   }
   

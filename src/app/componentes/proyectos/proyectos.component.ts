@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/servicios/login.service';
 import { ProyectoService } from 'src/app/servicios/proyecto.service';
 import { Proyecto } from '../model/proyecto.model';
 
@@ -9,9 +10,11 @@ import { Proyecto } from '../model/proyecto.model';
 })
 export class ProyectosComponent implements OnInit {
   proyecto: Proyecto[]=[];
-  constructor(public proyectoS: ProyectoService) { }
+  isLogged: boolean = false;
+  constructor(public proyectoS: ProyectoService, private loginService: LoginService) { }
   ngOnInit(): void {
     this.cargar();
+    this.isLogged =this.loginService.isLogg;
   }
   cargar(): void {
     this.proyectoS.getProyectos().subscribe(

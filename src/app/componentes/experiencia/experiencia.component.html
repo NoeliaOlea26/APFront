@@ -4,8 +4,8 @@
     <h1>Experiencia</h1>
 </div>
 <div class="text-center">
-    <button type="button" class="btn btn-dark " routerLink ="/nuevaexp">Agregar </button>
-    <a class="btn btn-right" href="nuevaexp"><i class="fa fa-pen"style="font-size:20px"></i></a>
+    <button type="button" class="btn btn-dark " routerLink ="/nuevaexp"*ngIf="isLogged">Agregar </button>
+    <a class="btn btn-right" href="nuevaexp"><i class="fa fa-pen"style="font-size:20px"*ngIf="isLogged"></i></a>
 </div>
 
     <ul class="items-list">
@@ -13,11 +13,11 @@
             <div class="unaSecc">
                 <div class="boton">
                     <div class="btn-edit">
-                        <a class="btn btn-right" href="editarexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></a>
+                        <a class="btn btn-right" href="editarexp/{{Experiencia.id}}"><i class="fa fa-pen"*ngIf="isLogged"></i></a>
                     </div>
 <!-- <button class="btn btn-light" routerLink="/editarexp/{{Experiencia.id}}"><i class="fa fa-pen"></i></button> -->
                         <div class="btn-delete">
-                        <a class="btn btn-right" href="#"(click)="borrar(Experiencia.id)"><i class="fa fa-trash"style="color: white"></i></a>
+                        <a class="btn btn-right" href="#"(click)="borrar(Experiencia.id)"><i class="fa fa-trash"style="color: white"*ngIf="isLogged"></i></a>
                     </div>
                 </div>
                 <div >
