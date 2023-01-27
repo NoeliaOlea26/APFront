@@ -21,7 +21,7 @@
             <div class="descripcion">
             <h2>{{proyecto.nombre}}</h2>
         <div class="data-conteiner">
-            <a href="#">
+       
                 <div class="logo- image-conteiner">
                     <img [src]="proyecto.captura" width="300" height="300" class="img-thumbnail">
                 </div>
@@ -30,10 +30,11 @@
                                                <p>{{proyecto.anio}}</p>
                     </div>
                 </div>
-            </a>
+    
         </div>
             <p>{{proyecto.descripcion}}</p>
-                <p>{{proyecto.link}}</p>
+            <a href="{{proyecto.link}}">
+                <p>{{proyecto.link}}</p></a>
                 <div class="btn-edit">
                     <a class="btn btn-right" href="editarproy/{{proyecto.id}}"><i class="fa fa-pen"style="font-size:20px"*ngIf="isLogged"></i></a>
                     <a class="btn btn-right" href="#"(click)="borrar(proyecto.id)"><i class="fa fa-trash"style="font-size:20px"*ngIf="isLogged"></i></a>
