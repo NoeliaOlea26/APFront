@@ -7,7 +7,8 @@ import { Educacion } from '../componentes/model/educacion.model';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL: string = 'http://localhost:8080/educacion/';
+  URL: string = 'https://backnoe.onrender.com/educacion/';
+  //'https://backnoe.onrender.com/educacion/';//  http://localhost:8080/educacion/
   constructor(private http: HttpClient) { }
   
   public findeduc(id: number): Observable<Educacion>{

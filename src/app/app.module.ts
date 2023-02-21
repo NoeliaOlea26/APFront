@@ -27,6 +27,9 @@ import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
 import { NvohysComponent } from './componentes/hard-soft-skills/nvohys.component';
 import { EdithysComponent } from './componentes/hard-soft-skills/edithys.component';
 import { LoginpruebComponent } from './componentes/loginprueb/loginprueb.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -68,7 +71,9 @@ import { LoginpruebComponent } from './componentes/loginprueb/loginprueb.compone
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-    })
+    }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

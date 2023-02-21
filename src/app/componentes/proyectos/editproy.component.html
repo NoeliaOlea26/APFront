@@ -16,14 +16,14 @@
     <input type="text" class="form-control" id="link" name="link" [(ngModel)]="proy.link" required></div>
 <div class="form-group">
     <label for="captura">Ruta captura</label>
-    <input type="text" class="form-control" id="captura" name="captura" [(ngModel)]="proy.captura" required></div>
-<!-- ../../../assets/images/urna-logo.jpg -->
+    <input type="file" class="form-control" id="captura" name="captura" [(ngModel)]="proy.captura" (change)="uploadImagen($event)"
+    accept=".jpg, .png, .jpeg"></div>
+
 <br>
 <div>
     <button type="submit" class="btn btn-primary"> Editar </button>
 </div>
             </form>
-<!-- <div class="text-center"><button class="btn btn-danger" routerLink=" "> Cancelar</button> </div> -->
         </div>
     </div>
 </div>

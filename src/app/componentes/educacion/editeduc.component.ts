@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EducacionService } from 'src/app/servicios/educacion.service';
+//import { ImagesService } from 'src/app/servicios/images.service';
 import { Educacion } from '../model/educacion.model';
+import { getStorage, ref } from "firebase/storage";
+import { ImageneduService} from 'src/app/servicios/imagenedu.service'
 
 @Component({
   selector: 'app-editeduc',
@@ -13,8 +16,10 @@ export class EditeducComponent implements OnInit {
   educ: Educacion= null;
 
   constructor(private educacionS: EducacionService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
-  ngOnInit(): void {
+    private router: Router , public imagen: ImageneduService)// , public imagen: ImageneduService , public imageS: ImagesService
+     { }
+  
+    ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.educacionS.findeduc(id).subscribe(data => {
       this.educ = data;
@@ -25,7 +30,11 @@ export class EditeducComponent implements OnInit {
   }
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    console.log(this.educ);
+    //this.educ.logo = this.imageS.url;
+    
+    this.educ.logo = this.imagen.url;
+
+    //console.log(this.educ);
     // this.educ.logo = this.imageService.url;
     this.educacionS.editEduc(id, this.educ).subscribe(
       data => {
@@ -35,13 +44,48 @@ export class EditeducComponent implements OnInit {
       console.log(err);
       alert("Error al modificar educacion");
       this.router.navigate(['']);
-    }    );  }
+    }); 
+  }
 
-//   uploadImage($event: any) {
-//     const id = this.activatedRouter.snapshot.params['id'];
-//     const name = "foto_perfil" + id;
-//     this.imageService.uploadImage($event, name);
-//   }
+  uploadImagen($event: any) {
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "educ" + id;
+    console.log(name);
+    //this.imagenes.uploadImage2($event, name);
+
+    this.imagen.uploadImage2($event, name);
+    console.log(name + "cargada");     
+  }
+
+  // uploadImage($event: any) {
+  //   const id = this.activatedRouter.snapshot.params['id'];
+  //   const name0 = "escuela" + id;
+  //   //this.imageS.uploadImage($event, name0);
+
+  //   const storage = getStorage();
+
+  //   // Points to the root reference
+  //   const storageRef = ref(storage);
+    
+  //   // Points to 'images'
+  //   const imagesRef = ref(storageRef, 'imagesFire');
+    
+  //   // Points to 'images/space.jpg'
+  //   // Note that you can use variables to create child values
+
+  //   //const fileName = 'space.jpg';
+  //   const spaceRef = ref(imagesRef, name0);
+    
+  //   // File path is 'images/space.jpg'
+  //   const path = spaceRef.fullPath;
+    
+  //   // File name is 'space.jpg'
+  //   const name1 = spaceRef.name;
+    
+  //   // Points to 'images'
+  //   const imagesRefAgain = spaceRef.parent;
+
+  // }
 
 //   public uploadImage(event: any, name: string){
 //     const file = $event.target.files[0];

@@ -7,7 +7,9 @@ import { Proyecto } from '../componentes/model/proyecto.model';
   providedIn: 'root'
 })
 export class ProyectoService {
-  URL: string = 'http://localhost:8080/proyecto/';
+  URL: string = 'https://backnoe.onrender.com/proyecto/';
+  //'http://localhost:8080/proyecto/';
+  //'https://backnoe.onrender.com/proyecto/';
   constructor(private http: HttpClient) { }
   
   public findProyecto(id: number): Observable<Proyecto>{

@@ -7,7 +7,9 @@ import { Skill } from '../componentes/model/skill.model';
   providedIn: 'root'
 })
 export class SkillService {
-  URL: string = 'http://localhost:8080/skill/';
+  URL: string =   'https://backnoe.onrender.com/skill/';
+  //'http://localhost:8080/skill/';
+
   constructor(private http: HttpClient) { }
   
   public findSkill(id: number): Observable<Skill>{

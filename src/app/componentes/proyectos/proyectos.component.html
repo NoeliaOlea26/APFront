@@ -1,21 +1,12 @@
 <a name="proyectos"></a>
-<div class="contenedor">
+<div id="Proyectos" class="contenedor">
     <div class="titulo">
         <div id="tit2"><h1>Proyectos</h1></div>
-        <!-- <div class="btn-edit">
-            <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
-        </div> -->
-  
     </div>
     <div class="text-center">
         <button type="button" class="btn btn-dark " routerLink ="/nuevoproy"*ngIf="isLogged">Agregar </button>
     </div>
     <section class="molde">
-        <!-- <div class="caja_padre">
-            <div class="img">
-                <img src="./img/61391.jpg" width="100%" height="100%" />
-            </div>
-        </div> -->
         <ng-container *ngFor="let proyecto of proyecto">
              <div class="descripcion1">
             <div class="descripcion">
@@ -43,136 +34,6 @@
 
     </div>
 </ng-container>
-
-        <!-- <div class="descripcion1">
-                <div class="descripcion">
-                <h2>Descripcion</h2>
-            <div class="data-conteiner">
-                <a href="#">
-                    <div class="logo- image-conteiner">
-                        <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                    </div>
-                    <div class="info">
-                        <div>
-                            <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                    dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                    veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-                </div>
-        </div>
-        <div class="descripcion1">
-            <div class="descripcion">
-            <h2>Descripcion</h2>
-        <div class="data-conteiner">
-            <a href="#">
-                <div class="logo- image-conteiner">
-                    <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                </div>
-                <div class="info">
-                    <div>
-                        <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-            </div>
-    </div> -->
-
     </section>
-    <!-- <section class="molde">
-        <div class="descripcion1">
-                <div class="descripcion">
-                <h2>Descripcion1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. 
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                    dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                    veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-                </div>
-        </div>
-        <div class="caja_padre">
-            <div class="img">
-                <img src="./img/61391.jpg" width="100%" height="100%" />
-            </div>
-            </div>
-    </section> -->
-
-    <!-- <ul class="lis-Proy">
-        <li>
-            <div class="descripcion1">
-                <div class="descripcion">
-                <h2>Descripcion</h2>
-            <div class="data-conteiner">
-                <a href="#">
-                    <div class="logo- image-conteiner">
-                        <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                    </div>
-                    <div class="info">
-                        <div>
-                            <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                    dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                    veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-                </div>
-        </div>
-        </li>
-        <li><div class="descripcion1">
-            <div class="descripcion">
-            <h2>Descripcion</h2>
-
-        <div class="data-conteiner">
-            <a href="#">
-                <div class="logo- image-conteiner">
-                    <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                </div>
-                <div class="info">
-                    <div>
-                        <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-            </div>
-    </div></li>
-        <li><div class="descripcion1">
-            <div class="descripcion">
-            <h2>Descripcion</h2>
-        <div class="data-conteiner">
-            <a href="#">
-                <div class="logo- image-conteiner">
-                    <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                </div>
-                <div class="info">
-                    <div>
-                        <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam! Ratione 
-                dignissimos, vitae eveniet placeat porro, quam commodi optio suscipit sed, 
-                veritatis repellendus impedit ut est earum tempore nobis! Atque!</p>
-            </div>
-    </div></li>
-    </ul>
- -->
-
+  
 </div>

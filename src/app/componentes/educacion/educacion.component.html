@@ -1,30 +1,12 @@
 <a name="educacion"></a>
     <div>
-    <div class="titulo">
+    <div id="Educacion" class="titulo">
         <div id="tit2"><h1>Educación</h1></div>
-        <!-- <div class="btn-edit">
-            <a class="btn btn-right" href="#"><i class="fa fa-pen"style="font-size:24px"></i></a>
-        </div> -->
     </div>
     <div class="text-center">
         <button type="button" class="btn btn-dark " routerLink ="/nuevaedu"*ngIf="isLogged">Agregar </button>
     </div>
     <ul class="items-list">
-            <!-- <li> --> 
-            <!-- <div class="data-conteiner">
-                <a href="#">
-                    <div class="logo- image-conteiner">
-                        <img src="../../../assets/images/foto.jpg " width="300" height="300" class="img-thumbnail">
-                    </div>
-                    <div class="info">
-                        <div>
-                            <p>      el logo (deser posible), nombre carrera o título, periodo o año.</p>
-                            <p>inicio-fin</p>
-                        </div>
-                    </div>
-                </a>
-            </div> -->
-        <!-- </li> -->
         <li *ngFor="let educacion of educacion">
             <div class="data-cont">
                 <h2>{{educacion.escuela}}</h2>
@@ -32,17 +14,9 @@
                     <a class="btn btn-right" href="editaredu/{{educacion.id}}"><i class="fa fa-pen"style="font-size:20px"*ngIf="isLogged"></i></a>
                     <a class="btn btn-right" href="#"(click)="borrar(educacion.id)"><i class="fa fa-trash"style="font-size:20px"*ngIf="isLogged"></i></a>
                 </div>
-                <!-- <div class="btn-edit">
-                    <a class="btn btn-right" href="#"><i class="fa fa-pen"></i></a>
-                </div> -->
-
                 <p> 
                 <img [src]="educacion.logo" width="100" height="100" align="left">{{educacion.titulo}}   </p>
                 <p>{{educacion.inicio}}{{educacion.fin}}</p>
-                <!-- <div class="boton">
-                    <span><button type="button" id="btn-r"><i class="fa fa-pen"style="font-size:20px"></i></button></span>
-                    <span><button type="button" id="btn-r">edit</button></span>
-                </div> -->
 <br><br>
         </div>
         <br>

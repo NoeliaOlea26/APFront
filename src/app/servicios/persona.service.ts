@@ -7,7 +7,9 @@ import { Persona } from '../componentes/model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL: string = 'http://localhost:8080/personas/';
+  URL: string = 'https://backnoe.onrender.com/personas/';
+  //'http://localhost:8080/personas/';
+  
   constructor(private http: HttpClient) { }
     public getPersona(): Observable<Persona>{
         return this.http.get<Persona>(this.URL+'traer/miperfil');

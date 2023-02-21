@@ -7,7 +7,9 @@ import { Experiencia } from '../componentes/model/experiencia.model';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  URL: string = 'http://localhost:8080/experiencia/';
+  URL: string = 
+  'https://backnoe.onrender.com/experiencia/';
+  //'https://backnoe.onrender.com/experiencia/';'http://localhost:8080/experiencia/';
   constructor(private http: HttpClient) { }
   
   public findexp(id: number): Observable<Experiencia>{

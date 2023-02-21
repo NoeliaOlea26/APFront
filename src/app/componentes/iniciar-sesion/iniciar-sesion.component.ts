@@ -10,14 +10,12 @@ import { LoginService } from 'src/app/servicios/login.service';
 })
 export class IniciarSesionComponent implements OnInit {
     isLogged: boolean = false;
-//form:FormGroup;
+    
   constructor( private activatedRouter: ActivatedRoute,
-    private router: Router, private loginService: LoginService) { }//private formBuilder:FormBuilder
+    private router: Router, private loginService: LoginService) { }
     ngOnInit(): void {
         console.log(this.isLogged);
 
-       //this.Login();
-        //throw new Error('Method not implemented.');
     }
     public getInputValue(inputValue:string, inputValue2:string){
       var estado = false;
@@ -45,32 +43,7 @@ export class IniciarSesionComponent implements OnInit {
       console.log("dpsInciarSesC no ingre"+this.isLogged);
      // this.router.navigate(['']);
     }
-//this.form = this.formBuilder.group({
-    //Login(){ 
-        //var done=0; 
-      //   var input =document.getElementById("usuario").value;
-      //   console.log("usuario");
-      //   var contrasenia=document.getElementById("contrasenia");
-      //   console.log("contrasenia");
-      //   if (usuario=="admin" && contrasenia=="admin") { 
-      //   //window.location="TU_PAGINA_WEB.HTML"; 
-      //   this.isLogged = true;
-      //   alert("Entró");
-      //   this.router.navigate(['']);
-      //   } 
-      //   if (usuario=="usuario" && contrasenia=="usuario") { 
-      //       alert("NO admin");
-      //       this.router.navigate(['']);
-      //  // window.location="TU_PAGINA_WEB.HTML"; 
-      //   } 
-      //   if (usuario=="" && contrasenia=="") { 
-      //  // window.location="errorpopup.html"; 
-      //  alert("Complete los campos");
-      //   } 
-       
-
 }
-//   ngOnInit(): void {
-//   }
+
 
 
