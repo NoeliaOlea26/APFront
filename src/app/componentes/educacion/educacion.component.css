@@ -1,8 +1,8 @@
-.titulo{
+/* .titulo{
     margin: 20px;
     padding: 5px;
     margin-bottom: 0px;
-}
+} */
 button{
     margin: 10px 20px 0px 0px;
 }
@@ -13,3 +13,11 @@ button{
 .data-cont{
     border-bottom: solid rgb(129 31 52);
 }
+ /* @media (max-width: 768px) {
+    .titulo{    margin: 50px;
+
+       padding: 5px;
+    margin-bottom: 0px; 
+
+}
+}*/

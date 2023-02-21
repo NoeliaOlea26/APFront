@@ -1,8 +1,11 @@
 <header>
     <div class="icon">
-        <div class="logotipo">
+        <!-- <div class="logotipo">
             <div><img src="../../../assets/images/logoAP5.png" ></div>
-        </div> 
+        </div>  -->
+        <div class="logotipo">
+            <div><a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/images/logoAP5.png" /></a></div>
+        </div>
         <button type="button" class="btn btn-danger " routerLink ="/iniciar-sesion" *ngIf="!isLogged">Login </button>
         <!-- <button type="button" class="btn btn-danger " routerLink ="/login" >Test </button> -->
         <button type="button" class="btn btn-danger " (click)=salir() *ngIf="isLogged">Salir </button>
@@ -14,12 +17,21 @@
     
     <nav class="menu">
         <ul>
-            <li><a href="#Encabezado">Inicio</a></li>
+            <!-- <li><a href="#Encabezado">Inicio</a></li>
             <li><a href="#Experiencia">Experiencia</a></li>
             <li><a href="#Educacion">Educacion</a></li>
             <li><a href="#HysS">Skills</a></li>
-            <li><a href="#Proyectos">Proyectos</a></li>
+            <li><a href="#Proyectos">Proyectos</a></li> -->
+            <li><a routerLink ="/portfolio">Inicio</a></li>
+            <li><a routerLink ="/experiencia">Experiencia</a></li>
+            <li><a routerLink ="/educacion">Educacion</a></li>
+            <li><a routerLink ="/hysSkill">Skills</a></li>
+            <li><a routerLink ="/proyectos">Proyectos</a></li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/educacion']">About</a>
+              </li> -->
         </ul>
+        
     </nav>
 </header>
 

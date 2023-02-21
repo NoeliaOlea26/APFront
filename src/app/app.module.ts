@@ -30,6 +30,7 @@ import { LoginpruebComponent } from './componentes/loginprueb/loginprueb.compone
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 
@@ -55,7 +56,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NvoproyComponent,
     NvohysComponent,
     EdithysComponent,
-    LoginpruebComponent
+    LoginpruebComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

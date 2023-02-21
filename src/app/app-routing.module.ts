@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { EditAcercaDeMiComponent } from './componentes/acerca-de-mi/edit-acerca-de-mi.component';
 import { EditeducComponent } from './componentes/educacion/editeduc.component';
 import { NvoeducComponent } from './componentes/educacion/nvoeduc.component';
@@ -14,8 +15,20 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { EditproyComponent } from './componentes/proyectos/editproy.component';
 import { NvoproyComponent } from './componentes/proyectos/nvoproy.component';
 
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { HardSoftSkillsComponent } from './componentes/hard-soft-skills/hard-soft-skills.component';
+import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+
 const routes: Routes = [
-  {path: 'portfolio', component:PortfolioComponent},
+{path: 'portfolio', component:PortfolioComponent},
+{path: 'experiencia', component:ExperienciaComponent},
+{path: 'educacion', component:EducacionComponent},
+{path: 'proyectos', component:ProyectosComponent},
+{path: 'hysSkill', component:HardSoftSkillsComponent},
+{path: 'encabezado', component:EncabezadoComponent},
+
 {path: 'iniciar-sesion', component:IniciarSesionComponent},
 // {path:'', redirectTo: 'iniciar-sesion',pathMatch: 'full'}
 {path:'', redirectTo: 'portfolio',pathMatch: 'full'},

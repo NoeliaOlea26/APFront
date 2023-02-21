@@ -1,0 +1,21 @@
+footer{
+    text-align: center;
+    background-color: rgb(48 43 51);
+
+    padding: 10px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+a{
+    color: #dc3545;
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+}
+p{
+    color: aliceblue;
+}
+a:hover {
+    color: aliceblue;
+  }
