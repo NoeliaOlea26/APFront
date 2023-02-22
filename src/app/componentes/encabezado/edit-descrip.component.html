@@ -16,15 +16,11 @@
             [(ngModel)]="persona.cargo" required>
         </div>
         <div class="form-group">
-            <label for="foto">RutaIm</label>
+            <label for="foto">Imagen</label>
             <input type="file" class="form-control" id="foto" name="foto" 
             [(ngModel)]="persona.foto" (change)="uploadImage($event)"
             accept=".jpg, .png, .jpeg">
         </div>
-            <div class="imagen">
-                <img src="imageS.url" width="200px">
-            </div>
-
             <div>
                 <button type="submit" class="btn btn-primary"> 
                     Editar </button>
