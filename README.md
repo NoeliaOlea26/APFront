@@ -1,4 +1,6 @@
 # MiPortfolio
+Soy Noelia Olea, de la provincia de Salta. Joven entusiasta en este campo, estudiante y abierta a nuevas experiencias. Este git contiene el codigo del FrontEnd de mi
+Proyecto Integrador de Desarrollo de Portfolio Web, siguiendo las instrucciones dadas por la guia del curso de #Yo Programo 3ra Cohorte para "Desarrollador Web Full Stack Jr".
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
